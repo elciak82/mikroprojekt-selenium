@@ -104,7 +104,7 @@ Wyświetlona została strona do rejestracji wraz z formularzem rejestracyjnym.
 **KROK 2**
 Wypełnij formularz prawidłowymi danymi (tylko imię i email), np.:
 Imię: Zenek
-email: zenek3@gmail.com
+email: zenek@o2.com
 oraz nieodpowiednim hasłem, np.:
 hasło: 123
 *WYNIK*
