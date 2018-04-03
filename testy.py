@@ -37,7 +37,7 @@ class ZrabatowaniRegistration(unittest.TestCase):
 
     def test1(self):
         driver = self.driver
-        print('***TEST 1 - CORRECT REGISTRATION***')
+        print('***TEST 1 - CORRECTLY REGISTRATION***')
         logo = driver.find_element_by_class_name(logo_css)
         driver.implicitly_wait(3)
         logo.is_displayed()

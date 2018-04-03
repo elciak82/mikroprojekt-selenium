@@ -1,0 +1,122 @@
+********Rejestracja nowego użytkownika na stronie ZRABATOWANI.PL**********
+
+                      ****PRZYPADKI TESTOWE****
+
+NUMER:                            1
+TYTUŁ:                            Prawidłowa rejestracja (wszystkie dane prawidłowe)
+PRIORYTET(WYSOKI/ŚREDNI/NISKI)):  Wysoki
+WERSJA:                           1
+AUTOR:                            Ewelina Walczak
+AUTOMATYZACJA:                    Tak
+PRZGLĄDARKA:                      Chrome Wersja 64.0.3282.140
+SYSTEM OPERACYJNY:                Linux
+
+WARUNKI WSTĘPNE:
+1. Użytkownik jest podłączony do sieci Internet
+2. Użytkownik znajduje się na głównej stronie Zrabatowani.pl
+
+SCENARIUSZ
+**KROK 1**
+Wybierz (kliknij w) zakładkę "Zarejestruj"
+*WYNIK*
+Wyświetlona została strona do rejestracji wraz z formularzem rejestracyjnym.
+
+**KROK 2**
+Wypełnij formularz prawidłowymi danymi, np.:
+Imię: Zenek
+email: zenek3@gmail.com
+hasło: zenek1234
+*WYNIK*
+Pola zostały prawidłowo wypełnione. Nie pojawiają się żadne komunikaty.
+
+**KROK 3**
+Zaznacz checkboxa "Akceptuję regulamin"
+*WYNIK*
+Checkbox został zaznaczony
+
+**KROK 4**
+Kliknij przycisk "Wyślij"
+*WYNIK*
+Uzytkownik został przeniesiony na stronę zawierającą informację, że jego konto jest aktywne, i że jest zalogowany.
+
+********************************************************************************************************************
+
+NUMER:                            2
+TYTUŁ:                            Nieprawidłowa rejestracja (podanie nieodpowiedniego emaila)
+PRIORYTET(WYSOKI/ŚREDNI/NISKI)):  Wysoki
+WERSJA:                           1
+AUTOR:                            Ewelina Walczak
+AUTOMATYZACJA:                    Tak
+PRZGLĄDARKA:                      Chrome Wersja 64.0.3282.140
+SYSTEM OPERACYJNY:                Linux
+
+WARUNKI WSTĘPNE:
+1. Użytkownik jest podłączony do sieci Internet
+2. Użytkownik znajduje się na głównej stronie Zrabatowani.pl
+
+SCENARIUSZ
+**KROK 1**
+Wybierz (kliknij w) zakładkę "Zarejestruj"
+*WYNIK*
+Wyświetlona została strona do rejestracji wraz z formularzem rejestracyjnym.
+
+**KROK 2**
+Wypełnij formularz prawidłowymi danymi (tylko imię i hasło), np.:
+Imię: Zenek
+hasło: zenek1234
+oraz nieprawidłowym adresem email, np.:
+email: zenek@ccc
+*WYNIK*
+Pola zostały wypełnione. Nie pojawiają się żadne komunikaty.
+
+**KROK 3**
+Zaznacz checkboxa "Akceptuję regulamin"
+*WYNIK*
+Checkbox został zaznaczony
+
+**KROK 4**
+Kliknij przycisk "Wyślij"
+*WYNIK*
+Pod polem "email" wyświetlona została informacja: ""zenek@ccc" nie jest poprawnym adresem e-mail."
+Użytkownik nie został zarejestrowany.
+
+*******************************************************************************************************************
+
+NUMER:                            3
+TYTUŁ:                            Nieprawidłowa rejestracja (podanie nieodpowiedniego hasła)
+PRIORYTET(WYSOKI/ŚREDNI/NISKI)):  Wysoki
+WERSJA:                           1
+AUTOR:                            Ewelina Walczak
+AUTOMATYZACJA:                    Tak
+PRZGLĄDARKA:                      Chrome Wersja 64.0.3282.140
+SYSTEM OPERACYJNY:                Linux
+
+WARUNKI WSTĘPNE:
+1. Użytkownik jest podłączony do sieci Internet
+2. Użytkownik znajduje się na głównej stronie Zrabatowani.pl
+
+SCENARIUSZ
+**KROK 1**
+Wybierz (kliknij w) zakładkę "Zarejestruj"
+*WYNIK*
+Wyświetlona została strona do rejestracji wraz z formularzem rejestracyjnym.
+
+**KROK 2**
+Wypełnij formularz prawidłowymi danymi (tylko imię i email), np.:
+Imię: Zenek
+email: zenek3@gmail.com
+oraz nieodpowiednim hasłem, np.:
+hasło: 123
+*WYNIK*
+Pola zostały wypełnione. Nie pojawiają się żadne komunikaty.
+
+**KROK 3**
+Zaznacz checkboxa "Akceptuję regulamin"
+*WYNIK*
+Checkbox został zaznaczony
+
+**KROK 4**
+Kliknij przycisk "Wyślij"
+*WYNIK*
+Pod polem "email" wyświetlona została informacja: "Podane hasło jest za krótkie. Wymyśl silniejsze hasło."
+Użytkownik nie został zarejestrowany.
