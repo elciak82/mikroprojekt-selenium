@@ -8,8 +8,8 @@ PRIORYTET(WYSOKI/ŚREDNI/NISKI)):  Wysoki
 WERSJA:                           1
 AUTOR:                            Ewelina Walczak
 AUTOMATYZACJA:                    Tak
-PRZGLĄDARKA:                      Chrome Wersja 64.0.3282.140
-SYSTEM OPERACYJNY:                Linux
+PRZEGLĄDARKA:                     Chrome Wersja 64.0.3282.140
+SYSTEM OPERACYJNY:                Linux (wer. ...)
 
 WARUNKI WSTĘPNE:
 1. Użytkownik jest podłączony do sieci Internet
@@ -47,8 +47,8 @@ PRIORYTET(WYSOKI/ŚREDNI/NISKI)):  Wysoki
 WERSJA:                           1
 AUTOR:                            Ewelina Walczak
 AUTOMATYZACJA:                    Tak
-PRZGLĄDARKA:                      Chrome Wersja 64.0.3282.140
-SYSTEM OPERACYJNY:                Linux
+PRZEGLĄDARKA:                     Chrome Wersja 64.0.3282.140
+SYSTEM OPERACYJNY:                Linux (wer. ...)
 
 WARUNKI WSTĘPNE:
 1. Użytkownik jest podłączony do sieci Internet
@@ -88,8 +88,8 @@ PRIORYTET(WYSOKI/ŚREDNI/NISKI)):  Wysoki
 WERSJA:                           1
 AUTOR:                            Ewelina Walczak
 AUTOMATYZACJA:                    Tak
-PRZGLĄDARKA:                      Chrome Wersja 64.0.3282.140
-SYSTEM OPERACYJNY:                Linux
+PRZEGLĄDARKA:                     Chrome Wersja 64.0.3282.140
+SYSTEM OPERACYJNY:                Linux (wer. ...)
 
 WARUNKI WSTĘPNE:
 1. Użytkownik jest podłączony do sieci Internet
