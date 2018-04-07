@@ -37,11 +37,11 @@ class ZrabatowaniRegistration(unittest.TestCase):
 
     def test1(self):
         driver = self.driver
-        print('***TEST 1 - CORRECTLY REGISTRATION***')
+        print('***TEST 1 - CORRECT REGISTRATION***')
         logo = driver.find_element_by_class_name(logo_css)
         driver.implicitly_wait(3)
         logo.is_displayed()
-        print ('Logo Zrabarowani is displayed.')
+        print ('Logo Zrabatowani was displayed.')
         registration_button = driver.find_element_by_class_name(registration_css)
         registration_button.click()
         print ('Registration page was opened.')
@@ -59,7 +59,7 @@ class ZrabatowaniRegistration(unittest.TestCase):
         register_button.click()
         print ('Registed button was clicked.')
         WebDriverWait(self.driver, 5).until(EC.text_to_be_present_in_element((By.ID,'thankyou'), 'Gratulacje'))
-        print ('User correctly registed.')
+        print ('User is registed correctly.')
 
     def test2(self):
         driver = self.driver
