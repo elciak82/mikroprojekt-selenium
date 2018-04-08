@@ -20,7 +20,7 @@ checkbox_css = 'checkbox-label'
 register_button_css ='register-submit'
 invalid_info = 'list-unstyled'
 
-valid_name = 'Zenek'
+valid_name = 'Agnieszka'
 valid_email = 'zenek3@gmail.com'
 valid_email2 = 'zenek@o2.com'
 invalid_email = 'zenek@ccc'
