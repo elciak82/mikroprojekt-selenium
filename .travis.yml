@@ -4,4 +4,4 @@ services:
 python:
   - "2.7"
 script:
-  - make build
+  - echo foo
