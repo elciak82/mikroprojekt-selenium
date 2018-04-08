@@ -4,5 +4,4 @@ services:
 python:
   - "2.7"
 script:
-  - make test
-  - make lint
+  - make build
