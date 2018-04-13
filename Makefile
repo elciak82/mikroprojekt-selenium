@@ -13,4 +13,4 @@ test:
 		PYTHONPATH=. py.test  --verbose -s
 
 run:
-		python main.py
+		python testy.py
