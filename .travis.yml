@@ -13,7 +13,7 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3
   - pip install selenium==2.48.0
-  - python example_project/manage.py collectstatic --noinput --settings test_settings
+  #- python example_project/manage.py collectstatic --noinput --settings test_settings
 script:
   - make test
   - make lint
