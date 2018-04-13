@@ -9,8 +9,8 @@ lint:
 		flake8 test
 
 test:
-		PYTHONPATH=. py.test
-		PYTHONPATH=. py.test  --verbose -s
+		PYTHONPATH=. py.test testy.py
+		#PYTHONPATH=. py.test  --verbose -s
 
 run:
 		python testy.py
