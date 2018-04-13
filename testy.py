@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 import unittest
 from time import sleep
 
-//zmienić na GIVEN WHEN THAN Metoda BDD
+# zmienić na GIVEN WHEN THAN Metoda BDD
 url = 'https://zrabatowani.pl/'
 logo_css = 'logo-top '
 registration_css = 'no_p'
