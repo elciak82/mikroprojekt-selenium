@@ -1,2 +1,3 @@
-# mikroprojekt-selenium
-#1 mikroprojekt-selenium
+# mikroprojekty
+# 1 mikroprojekt - selenium
+# 2 integracja miniprojektu selenium z travisCi
