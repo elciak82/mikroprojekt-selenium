@@ -4,4 +4,9 @@ services:
 python:
   - "2.7"
 script:
-  - make build
+  #- make build
+  - make test
+  - make lint
+  # after success
+  # - make docker_build
+  # - make docker_push
