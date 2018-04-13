@@ -33,6 +33,7 @@ class ZrabatowaniRegistration(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
         sleep(1)
+        driver = self.driver
         self.driver.maximize_window()
         self.driver.get(url)
 
@@ -135,6 +136,6 @@ class ZrabatowaniRegistration(unittest.TestCase):
     def tearDown(self):
         self.driver.quit()
 
-if __name__ == "__main__":
+if __name__ == (__main__):
     unittest.main
     # (verbosity = 0)
