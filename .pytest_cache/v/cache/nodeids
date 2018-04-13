@@ -1,1 +1,4 @@
-[]
+[
+  "testy/testy.py::ZrabatowaniRegistration::test2", 
+  "testy/testy.py::ZrabatowaniRegistration::test3"
+]
