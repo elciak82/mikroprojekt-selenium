@@ -24,3 +24,12 @@ docker_run: docker_build
 							--name $(MY_DOCKER_NAME)-dev \
 							-p 5000:5000 \
 							-d $(MY_DOCKER_NAME)
+
+USERNAME=brokulli
+TAG=$(USERNAME)/$(MY_DOCKER_NAME)
+
+docker_push: docker_build
+				@docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}; \
+				docker tag $(MY_DOCKER_NAME) $(TAG); \
+				docker push $(TAG); \
+				docker logout;
