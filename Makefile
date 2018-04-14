@@ -8,7 +8,7 @@ lint:
 		flake8 test
 
 test:
-		PYTHONPATH=. py.test testy/testy.py
+		PYTHONPATH=. py.test testy/testyFixMe.py
 		
 run:
-		python testy.py
+		python testyFixMe.py
