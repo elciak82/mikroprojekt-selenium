@@ -1,3 +1,6 @@
+SERVICE_NAME=testy-zrabatowani
+MY_DOCKER_NAME=$(SERVICE_NAME)
+
 .PHONY: test
 
 deps:
@@ -12,3 +15,12 @@ test:
 
 run:
 		python testy.py
+
+docker_build:
+			docker build -t $(MY_DOCKER_NAME) .
+
+docker_run: docker_build
+			docker run \
+							--name $(MY_DOCKER_NAME)-dev \
+							-p 5000:5000 \
+							-d $(MY_DOCKER_NAME)
