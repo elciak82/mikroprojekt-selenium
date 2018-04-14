@@ -18,5 +18,5 @@ script:
   - make test
   - make lint
   # after success
-  # - make docker_b uild
-  # - make docker_push
+  - make docker_build
+  - make docker_push
