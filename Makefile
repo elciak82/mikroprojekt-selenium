@@ -2,6 +2,7 @@ SERVICE_NAME=testy-zrabatowani
 MY_DOCKER_NAME=$(SERVICE_NAME)
 
 .PHONY: test
+.DEFAULT_GOAL :=test
 
 deps:
 		pip install -r requirements.txt; \
@@ -24,6 +25,9 @@ docker_run: docker_build
 							--name $(MY_DOCKER_NAME)-dev \
 							-p 5000:5000 \
 							-d $(MY_DOCKER_NAME)
+
+docker_stop:
+		docker_stop $(MY_DOCKER_NAME)-dev
 
 USERNAME=brokulli
 TAG=$(USERNAME)/$(MY_DOCKER_NAME)
