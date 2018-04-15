@@ -15,7 +15,7 @@ test:
 		PYTHONPATH=. py.test testy/testy.py
 
 run:
-		python testy.py
+		python testy/testy.py
 
 docker_build:
 			docker build -t $(MY_DOCKER_NAME) .
