@@ -19,3 +19,7 @@ script:
   # after success
   - make docker_build
   - make docker_push
+deploy:
+  provider: heroku
+  app: ${HEROKU_API_KEY}
+  secure: "evening-tundra-56793"
