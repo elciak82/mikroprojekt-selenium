@@ -22,5 +22,5 @@ script:
 
 deploy:
   provider: heroku
-  app: ""evening-tundra-56793""
+  app: "intense-wave-65690"
   api_key: $(HEROKU_API_KEY)

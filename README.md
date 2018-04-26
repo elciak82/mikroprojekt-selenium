@@ -5,15 +5,13 @@
 
 - Aktywowanie hermetycznego środowiska dla aplikacji py:
 
-  ::
-
-    source /usr/bin/virtualenvwrapper.sh
-    workon wsb-simple-flask-app
+  - source /usr/bin/virtualenvwrapper.sh
+  - workon wsb-simple-flask-app
 
 status na TravisCi
 
 .. image:: https://travis-ci.org/elciak82/mikroprojekt-selenium.svg?branch=master
-    :target: https://travis-ci.org/elciak82/mikroprojekt-selenium
+    :target:  https://travis-ci.org/elciak82/mikroprojekt-selenium
 
 
 Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (zostala uzyta platforma Heroku)
@@ -25,3 +23,6 @@ Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (zostala uzy
 - w pliku runtime.txt zadano wersję Pythona, w której została stworzona aplikacja (python-2.7.14)
 
 Status na Heroku
+
+.. image:: https://intense-wave-65690.herokuapp.com/
+  :target: https://intense-wave-65690.herokuapp.com/
