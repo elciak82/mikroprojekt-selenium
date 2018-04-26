@@ -8,7 +8,7 @@
   ::
 
     source /usr/bin/virtualenvwrapper.sh
-    workon mikroprojekt-selenium
+    workon wsb-simple-flask-app
 
 status na TravisCi
 
