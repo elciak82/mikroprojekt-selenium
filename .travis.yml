@@ -19,3 +19,8 @@ script:
   # after success
   - make docker_build
   - make docker_push
+
+deploy:
+  provider: heroku
+  api_key: $(HEROKU_API_KEY)
+  secure: "intense-wave-65690"
