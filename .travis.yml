@@ -23,4 +23,4 @@ script:
 deploy:
   provider: heroku
   api_key: $(HEROKU_API_KEY)
-  secure: "intense-wave-65690"
+  secure: "evening-tundra-56793"
