@@ -7,8 +7,10 @@ MIKROPROJEKTY
 
 - Aktywowanie hermetycznego środowiska dla aplikacji py:
 
-  - source /usr/bin/virtualenvwrapper.sh
-  - workon wsb-simple-flask-app
+  ::
+
+    source /usr/bin/virtualenvwrapper.sh
+    workon mikroprojekt-selenium
 
 
 - Status na TravisCi:
