@@ -28,6 +28,16 @@ MIKROPROJEKTY
 
   - w pliku runtime.txt zadano wersję Pythona, w której została stworzona aplikacja (python-2.7.14)
 
+  ::
+
+    heroku remote -v
+
+  - add-commit-push do gita
+
+  ::
+
+    git push heroku master
+
 
 - Status na Heroku:
 
