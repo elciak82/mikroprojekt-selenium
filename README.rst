@@ -31,5 +31,4 @@ MIKROPROJEKTY
 
 - Status na Heroku:
 
-.. image:: https://intense-wave-65690.herokuapp.com
-  :target: https://intense-wave-65690.herokuapp.com
+.. image:: https://dashboard.heroku.com/apps/intense-wave-65690
