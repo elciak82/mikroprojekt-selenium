@@ -18,6 +18,9 @@ MIKROPROJEKTY
 .. image:: https://travis-ci.org/elciak82/mikroprojekt-selenium.svg?branch=master
   :target:  https://travis-ci.org/elciak82/mikroprojekt-selenium
 
+  ::
+
+    ...
 
 
 - Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (zostala uzyta platforma Heroku)
@@ -31,5 +34,5 @@ MIKROPROJEKTY
 
 - Status na Heroku:
 
-.. image:: https://intense-wave-65690.herokuapp.com/
-  :target: https://intense-wave-65690.herokuapp.com/
+.. image:: https://intense-wave-65690.herokuapp.com
+  :target: https://intense-wave-65690.herokuapp.com
