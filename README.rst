@@ -20,9 +20,6 @@ MIKROPROJEKTY
 
 
 
-    ...
-
-
 - Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (zostala uzyta platforma Heroku)
 
   - w pliku requirements.txt zostal dodany gunicorn - szybszy od flaska, domyślnie jest w stanie obsłużyć więcej żądań od flask
