@@ -18,7 +18,7 @@ MIKROPROJEKTY
 .. image:: https://travis-ci.org/elciak82/mikroprojekt-selenium.svg?branch=master
   :target:  https://travis-ci.org/elciak82/mikroprojekt-selenium
 
-  ::
+
 
     ...
 
