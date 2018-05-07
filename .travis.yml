@@ -19,15 +19,7 @@ script:
   # after success
   - make docker_build
   - make docker_push
-<<<<<<< HEAD
-deploy:
-  provider: heroku
-  app: ${HEROKU_API_KEY}
-  secure: "evening-tundra-56793"
-=======
-
 deploy:
   provider: heroku
   app: "intense-wave-65690"
   api_key: $(HEROKU_API_KEY)
->>>>>>> feature/Magda
