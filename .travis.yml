@@ -22,4 +22,4 @@ script:
 deploy:
   provider: heroku
   app: "intense-wave-65690"
-  api_key: $(HEROKU_API_KEY)
+  api_key: ${HEROKU_API_KEY}
