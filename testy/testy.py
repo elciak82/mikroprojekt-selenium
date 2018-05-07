@@ -9,9 +9,8 @@ from selenium.webdriver.common.by import By
 import unittest
 from time import sleep
 
-
 url = 'https://zrabatowani.pl/'
-logo_css = 'logo-top '
+logo_css = 'logo-top'
 registration_css = 'no_p'
 name_field_css = 'register_profile_name'
 email_field_css = 'register_email'
@@ -19,102 +18,83 @@ password_field_css = 'register_password'
 checkbox_css = 'checkbox-label'
 register_button_css ='register-submit'
 invalid_info = 'list-unstyled'
+alert_css = 'alert-danger'
 
-valid_name = 'Zenek'
-valid_email = 'zenek3@gmail.com'
-valid_email2 = 'zenek@o2.com'
-invalid_email = 'zenek@ccc'
-valid_password = 'zenek1234'
+valid_name = 'Agnieszka'
+valid_email = 'Agnieszka15@gmail.com'
+valid_email2 = 'Agnieszka@o2.com'
+invalid_email = 'Agnieszka@ccc'
+valid_password = 'Agnieszka1234'
 invalid_password = '123'
 
 class ZrabatowaniRegistration(unittest.TestCase):
 
-    def setUp(self):
+    @classmethod
+    def setUpClass(self):
         self.driver = webdriver.Chrome()
-        sleep (1)
-        self.driver.maximize_window()
         self.driver.get(url)
 
-    # def test1(self):
-    #     driver = self.driver
-    #     print('***TEST 1 - CORRECT REGISTRATION***')
-    #     logo = driver.find_element_by_class_name(logo_css)
-    #     driver.implicitly_wait(3)
-    #     logo.is_displayed()
-    #     print ('Logo Zrabarowani is displayed.')
-    #     registration_button = driver.find_element_by_class_name(registration_css)
-    #     registration_button.click()
-    #     print ('Registration page was opened.')
-    #     user_name = driver.find_element_by_id(name_field_css)
-    #     user_name.send_keys(valid_name)
-    #     user_email = driver.find_element_by_id(email_field_css)
-    #     user_email.send_keys(valid_email)
-    #     user_password = driver.find_element_by_id(password_field_css)
-    #     user_password.send_keys(valid_password)
-    #     print ('All fields was filled.')
-    #     checkbox = driver.find_element_by_class_name(checkbox_css)
-    #     checkbox.click()
-    #     print('Checkbox was checked.')
-    #     register_button = driver.find_element_by_class_name(register_button_css)
-    #     register_button.click()
-    #     print ('Registed button was clicked.')
-    #     WebDriverWait(self.driver, 5).until(EC.text_to_be_present_in_element((By.ID,'thankyou'), 'Gratulacje'))
-    #     print ('User correctly registed.')
+    def setUp(self):
+        self.driver.maximize_window()
+        register_button = self.driver.find_element_by_class_name(registration_css)
+        register_button.click()
+        WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located((By.CLASS_NAME, logo_css)))
 
-    def test2(self):
+    def test1_invalid_mail(self):
         driver = self.driver
-        print('***TEST 2 - INCORRECT REGISTRATION - INVALID EMAIL***')
-        logo = driver.find_element_by_class_name(logo_css)
-        driver.implicitly_wait(3)
-        logo.is_displayed()
-        print ('Logo Zrabarowani is displayed.')
-        registration_button = driver.find_element_by_class_name(registration_css)
-        registration_button.click()
-        print ('Registration page was opened.')
+        print("\n"+'***TEST 1 - INCORRECT REGISTRATION - INVALID EMAIL***')
         user_name = driver.find_element_by_id(name_field_css)
         user_name.send_keys(valid_name)
         user_email = driver.find_element_by_id(email_field_css)
         user_email.send_keys(invalid_email)
         user_password = driver.find_element_by_id(password_field_css)
         user_password.send_keys(valid_password)
-        print ('All fields was filled.')
         checkbox = driver.find_element_by_class_name(checkbox_css)
         checkbox.click()
-        print('Checkbox was checked.')
         register_button = driver.find_element_by_class_name(register_button_css)
         register_button.click()
-        print ('Registed button was clicked.')
-        WebDriverWait(self.driver, 5).until(EC.text_to_be_present_in_element((By.CLASS_NAME, invalid_info), ('"'+invalid_email+'" nie jest poprawnym adresem e-mail.')))
-        print ('Info about invalid email.')
+        WebDriverWait(driver, 5).until(EC.text_to_be_present_in_element((By.CLASS_NAME, invalid_info), ('"'+invalid_email+'" nie jest poprawnym adresem e-mail.')))
 
-    def test3(self):
+    def test2_invalid_password(self):
         driver = self.driver
-        print('***TEST 3 - INCORRECT REGISTRATION - INVALID PASSWORD***')
-        logo = driver.find_element_by_class_name(logo_css)
-        driver.implicitly_wait(3)
-        logo.is_displayed()
-        print ('Logo Zrabarowani is displayed.')
-        registration_button = driver.find_element_by_class_name(registration_css)
-        registration_button.click()
-        print ('Registration page was opened.')
+        print("\n"+'***TEST 2 - INCORRECT REGISTRATION - INVALID PASSWORD***')
         user_name = driver.find_element_by_id(name_field_css)
         user_name.send_keys(valid_name)
         user_email = driver.find_element_by_id(email_field_css)
         user_email.send_keys(valid_email2)
         user_password = driver.find_element_by_id(password_field_css)
         user_password.send_keys(invalid_password)
-        print ('All fields was filled.')
         checkbox = driver.find_element_by_class_name(checkbox_css)
         checkbox.click()
-        print('Checkbox was checked.')
         register_button = driver.find_element_by_class_name(register_button_css)
         register_button.click()
-        print ('Registed button was clicked.')
-        WebDriverWait(self.driver, 5).until(EC.text_to_be_present_in_element((By.CLASS_NAME, invalid_info), ('Podane hasło jest za krótkie. Wymyśl silniejsze hasło.')))
-        print ('Info about invalid password.')
+        WebDriverWait(driver, 5).until(EC.text_to_be_present_in_element((By.CLASS_NAME, invalid_info), ('Podane hasło jest za krótkie. Wymyśl silniejsze hasło.')))
+
+    def test3_correct_registration(self):
+        driver = self.driver
+        print("\n" + '***TEST 3 - CORRECT REGISTRATION***')
+        user_name = driver.find_element_by_id(name_field_css)
+        user_name.send_keys(valid_name)
+        user_email = driver.find_element_by_id(email_field_css)
+        user_email.send_keys(valid_email)
+        user_password = driver.find_element_by_id(password_field_css)
+        user_password.send_keys(valid_password)
+        checkbox = driver.find_element_by_class_name(checkbox_css)
+        checkbox.click()
+        register_button = driver.find_element_by_class_name(register_button_css)
+        register_button.click()
+        try:
+            WebDriverWait(driver, 5).until(EC.text_to_be_present_in_element((By.ID,'thankyou'), 'Gratulacje'))
+        except Exception:
+            driver.find_element_by_class_name(alert_css)
+            self.fail("Email has already exist in a database!")
 
     def tearDown(self):
-        self.driver.quit()
+        pass
+
+    @classmethod
+    def tearDownClass(self):
+        self.driver.close()
 
 if __name__ == "__main__":
-    unittest.main(verbosity = 0)
+    unittest.main()
