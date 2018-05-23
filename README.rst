@@ -50,7 +50,7 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 
 
 
-- Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (zostala uzyta platforma Heroku)
+- Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (Heroku):
 
   - w pliku requirements.txt zostal dodany gunicorn - szybszy od flaska, domyślnie jest w stanie obsłużyć więcej żądań od flask
 
@@ -62,6 +62,8 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 
     heroku remote -v
 
+
+
   - add-commit-push do gita
 
   ::
@@ -72,4 +74,4 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 - Status na Heroku:
 
 .. image:: https://dashboard.heroku.com/apps/intense-wave-65690
-  :target: https://dashboard.heroku.com/apps/intense-wave-65690
+  :target: https://dashboard.heroku.com/apps/
