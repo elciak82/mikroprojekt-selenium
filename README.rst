@@ -1,7 +1,13 @@
-MIKROPROJEKTY
+Testowanie funkcjonalności aplikacji web-owej
+===================
 
-- 1 selenium
-- 2 integracja miniprojektu selenium z TravisCi, Heroku
+Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
+- utworzenie testów automatycznych (selenium)
+- umieszczenie projektu na github.com (system kontroli wersji)
+- integracja projektu z TravisCi (Continuous Integration)
+- integracja projektu z Docker (umieszczenie projektu na wirtualnym kontenerze)
+- integracja projektu Heroku (Paas - hostowanie aplikacji na chmurze,
+  Continuous Deployment - dostarczenie aplikacji do "klienta")
 
 
 
