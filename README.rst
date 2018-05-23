@@ -14,7 +14,8 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 - integracja projektu z Docker (umieszczenie projektu na wirtualnym kontenerze)
   ::
 
-- integracja projektu Heroku (Paas - hostowanie aplikacji na chmurze, Continuous Deployment - dostarczenie aplikacji do "klienta")
+- integracja projektu Heroku (Paas - hostowanie aplikacji na chmurze,
+Continuous Deployment - dostarczenie aplikacji do "klienta")
 
   ::
 
@@ -52,11 +53,13 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 
 - Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (Heroku):
 
-  - w pliku requirements.txt zostal dodany gunicorn - szybszy od flaska, domyślnie jest w stanie obsłużyć więcej żądań od flask
+  - w pliku requirements.txt zostal dodany gunicorn - szybszy od flaska,
+  domyślnie jest w stanie obsłużyć więcej żądań od flask
 
   - został utworzony plik Procfile
 
-  - w pliku runtime.txt zadano wersję Pythona, w której została stworzona aplikacja (python-2.7.14)
+  - w pliku runtime.txt zadano wersję Pythona,
+  w której została stworzona aplikacja (python-2.7.14)
 
   ::
 
