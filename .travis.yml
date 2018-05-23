@@ -21,5 +21,5 @@ script:
   - make docker_push
 deploy:
   provider: heroku
-  app: "intense-wave-65690"
+  app: "arcane-peak-59312"
   api_key: ${HEROKU_API_KEY}
