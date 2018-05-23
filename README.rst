@@ -70,7 +70,7 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 
     git push heroku master
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
 
 - Status na Heroku:
 
