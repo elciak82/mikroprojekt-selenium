@@ -1,8 +1,8 @@
-Testowanie funkcjonalności aplikacji web-owej
+Testowanie funkcjonalności aplikacji webowej
 ===================
 
 Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
-- utworzenie testów automatycznych (selenium)
+- utworzenie testów automatycznych (python, selenium)
   ::
 
 - umieszczenie projektu na github.com (system kontroli wersji)
@@ -16,7 +16,19 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 
 - integracja projektu Heroku (Paas - hostowanie aplikacji na chmurze, Continuous Deployment - dostarczenie aplikacji do "klienta")
 
+  ::
+  ::
 
+
+- Hermetyczne środowisko - pierwsza praca z projektem (virtualenv):
+
+  ::
+
+    source /usr/bin/virtualenvwrapper.sh
+    mkvirtualenv mikroprojekt-selenium
+    pip install -r requirements.txt
+    pip install -r test_requirements.txt
+    
 
 - Aktywowanie hermetycznego środowiska dla aplikacji py:
 
