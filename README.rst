@@ -74,5 +74,5 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 
 - Status na Heroku:
 
-.. image:: https://dashboard.heroku.com/apps/arcane-peak-59312
+.. image:: https://dashboard.heroku.com/apps/intense-wave-65690
   :target: https://dashboard.heroku.com/apps/
