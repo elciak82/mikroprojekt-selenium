@@ -17,7 +17,6 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
 - integracja projektu Heroku (Paas - hostowanie aplikacji na chmurze, Continuous Deployment - dostarczenie aplikacji do "klienta")
 
   ::
-  ::
 
 
 - Hermetyczne środowisko - pierwsza praca z projektem (virtualenv):
@@ -28,7 +27,7 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
     mkvirtualenv mikroprojekt-selenium
     pip install -r requirements.txt
     pip install -r test_requirements.txt
-    
+
 
 - Aktywowanie hermetycznego środowiska dla aplikacji py:
 
