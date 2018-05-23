@@ -42,7 +42,7 @@ Continuous Deployment - dostarczenie aplikacji do "klienta")
 
   ::
 
-    python testy.py
+    python testy/testy.py
 
 - Status na TravisCi:
 
