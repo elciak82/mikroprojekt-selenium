@@ -29,13 +29,19 @@ Projekt polega na przetestowaniu strony internetowej zrabatowani.pl:
     pip install -r test_requirements.txt
 
 
-- Aktywowanie hermetycznego środowiska dla aplikacji py:
+- Aktywowanie hermetycznego środowiska dla aplikacji py (kontynuacja pracy):
 
   ::
 
     source /usr/bin/virtualenvwrapper.sh
     workon mikroprojekt-selenium
 
+
+- Uruchamianie applikacji:
+
+  ::
+
+    python testy.py
 
 - Status na TravisCi:
 
