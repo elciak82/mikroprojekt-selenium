@@ -79,5 +79,5 @@ Continuous Deployment - dostarczenie aplikacji do "klienta")
 
 - Status na Heroku:
 
-.. image:: https://dashboard.heroku.com/apps/intense-wave-65690
+.. image:: https://dashboard.heroku.com/apps/morning-plateau-26822
   :target: https://dashboard.heroku.com/apps/
