@@ -44,6 +44,8 @@ Continuous Deployment - dostarczenie aplikacji do "klienta")
 
     python testy/testy.py
 
+..
+
 - Status na TravisCi:
 
 .. image:: https://travis-ci.org/elciak82/mikroprojekt-selenium.svg?branch=master
