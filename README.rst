@@ -52,6 +52,11 @@ Continuous Deployment - dostarczenie aplikacji do "klienta")
   :target:  https://travis-ci.org/elciak82/mikroprojekt-selenium
 
 
+  - Status na StatusCake:
+
+.. image:: https://app.statuscake.com/button/index.php?Track=H1czVaJwRu&Days=1&Design=1
+  :target: https://www.statuscake.com
+
 
 - Wykorzystanie platformy typu PaaS do hostowania aplikacji w chmurze (Heroku):
 
@@ -74,10 +79,3 @@ Continuous Deployment - dostarczenie aplikacji do "klienta")
   ::
 
     git push heroku master
-
-
-
-- Status na Heroku:
-
-.. image:: https://dashboard.heroku.com/apps/morning-plateau-26822
-  :target: https://dashboard.heroku.com/apps/
