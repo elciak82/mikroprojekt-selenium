@@ -53,7 +53,7 @@ Continuous Deployment - dostarczenie aplikacji do "klienta")
 
 
 
-  - Status na StatusCake:
+ - Status na StatusCake:
 
 .. image:: https://app.statuscake.com/button/index.php?Track=H1czVaJwRu&Days=1&Design=1
   :target: https://www.statuscake.com
