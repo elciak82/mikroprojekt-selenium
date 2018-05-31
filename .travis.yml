@@ -19,3 +19,7 @@ script:
   # after success
   - make docker_build
   - make docker_push
+deploy:
+  provider: heroku
+  app: "morning-plateau-26822"
+  api_key: ${HEROKU_API_KEY}
